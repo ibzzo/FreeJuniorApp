@@ -84,7 +84,7 @@ DATABASES = {
     'default': {
 
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'freejuniorapp',
+        'NAME': 'FreeJunior_Database',
 
         'USER': 'yann',
         'PASSWORD': 'Lavitesse123*',
