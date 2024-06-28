@@ -284,7 +284,23 @@ p {
 .timeline-heading h3 {
     color: #063BAD; /* New color for h4 elements inside timeline */
 }
-
+@media (max-width: 767px) {
+        .timeline::before {
+            left: 8%;
+        }
+        .timeline-badge {
+            left: 0;
+            margin-left: 0;
+        }
+        .timeline-panel {
+            width: calc(100% - 70px);
+            margin-left: 70px;
+            float: right;
+        }
+        .timeline > li:nth-of-type(even) .timeline-panel {
+            left: 0;
+        }
+    }
  </style>
 <div class="container mt-4">
     <div class="row">
