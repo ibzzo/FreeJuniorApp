@@ -284,30 +284,52 @@ p {
 .timeline-heading h3 {
     color: #063BAD; /* New color for h4 elements inside timeline */
 }
- .timeline > li:nth-of-type(odd) .timeline-panel {
-        left: 0;
-    }
-    .timeline > li:nth-of-type(even) .timeline-panel {
-        left: 55%;
-    }
-    .timeline-heading h3 {
-        margin-top: 0;
-    }
+
     @media (max-width: 767px) {
-        .timeline::before {
-            left: 8%;
-        }
-        .timeline-badge {
-            display: none; /* Masquer les icônes sur les petits écrans */
-        }
-        .timeline-panel {
-            width: calc(100% - 70px);
-            margin-left: 70px;
-            float: right;
-        }
-        .timeline > li:nth-of-type(even) .timeline-panel {
-            left: 0;
-        }
+          .timeline::before {
+        left: 8%;
+        width: 2px;
+    }
+
+    .timeline > li {
+        margin-bottom: 30px;
+    }
+
+    .timeline-badge {
+        display: none; /* Masquer les icônes sur les petits écrans */
+    }
+
+    .timeline-panel-container {
+        width: 100%;
+        padding: 10px;
+        float: none;
+        text-align: left;
+    }
+
+    .timeline-panel {
+        padding: 15px;
+        box-shadow: none;
+        transition: none;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+    }
+
+    .timeline-heading h4 {
+        font-size: 1.2rem;
+        color: #007bff;
+    }
+
+    .timeline-heading p,
+    .timeline-body p {
+        font-size: 1rem;
+    }
+
+    .heading h2 {
+        font-size: 2rem;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
     }
  </style>
 <div class="container mt-4">
