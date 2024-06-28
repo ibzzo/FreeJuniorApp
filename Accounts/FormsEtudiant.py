@@ -33,7 +33,7 @@ class StudentRegistrationForm(forms.ModelForm):
         widget=forms.Textarea(attrs={
             'class': 'form-control',
             'placeholder': (
-                "Décrivez-vous brièvement. Voici quelques points à inclure pour atteindre les 300 mots : \n"
+                "Décrivez-vous brièvement. Voici quelques points à inclure pour atteindre les 100 mots : \n"
                 "- Qui êtes-vous et quel est votre parcours académique ? \n"
                 "- Quelles sont les stages que vous avez effectués ? \n"
                 "- Sur quels projets avez-vous travaillé ? \n"
