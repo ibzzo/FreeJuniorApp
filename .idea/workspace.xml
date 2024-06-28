@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54add3f1-bddb-4dcc-8548-368de03c2de2" name="Changes" comment="" />
+    <list default="true" id="54add3f1-bddb-4dcc-8548-368de03c2de2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +46,7 @@
       <recent name="C:\Users\PC\PycharmProjects\tests\FreeJuniorApp_version1\pythonProject\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\PycharmProjects\tests\FreeJuniorApp_version1\pythonProject\static\img" />
       <recent name="C:\Users\PC\PycharmProjects\tests\FreeJuniorApp_version1\pythonProject\static" />
     </key>
   </component>
