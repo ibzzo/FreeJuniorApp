@@ -27,7 +27,7 @@ def login_user(request):
             messages.error(request, "Erreur de validation du formulaire")
     else:
         form = AuthenticationForm()
-    return render(request, "accounts/login.html", {"form": form})
+    return render(request, "Accounts/login.html", {"form": form})
 def register_student(request):
     if request.method == 'POST':
         user_form = UserForm(request.POST)
@@ -51,7 +51,7 @@ def register_student(request):
         'user_form': user_form,
         'student_form': student_form
     }
-    return render(request, 'accounts/student_form.html', context)
+    return render(request, 'Accounts/student_form.html', context)
 
 
 def logout_user(request):
@@ -76,4 +76,4 @@ def edit_student_profile(request):
         'user_form': user_form,
         'student_form': student_form
     }
-    return render(request, 'accounts/edit_student_profile.html', context)
+    return render(request, 'Accounts/edit_student_profile.html', context)
