@@ -298,7 +298,7 @@ p {
  </style>
 <div class="container mt-4">
     <div class="row">
-         <div class="col-md-6">
+        <div class="col-md-6 order-md-1 order-2">
             <h1 class="text-primary">FreeJunior - 1ère plateforme de freelance pour étudiant</h1>
             <p>Nous croyons que les étudiants d'aujourd'hui sont les leaders de demain. Rejoignez notre plateforme pour accéder à des opportunités de missions freelances qui vous permettront de développer vos compétences et d'acquérir une expérience précieuse dans votre domaine.</p>
             <div class="btn-group mt-2" role="group">
@@ -306,11 +306,11 @@ p {
                 <a href="{% url 'mission_list' %}" class="btn btn-info btn-lg ml-2">Voir les missions</a>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 order-md-2 order-1 mb-4 mb-md-0">
             <!-- Vous pouvez ajouter une image ou un autre contenu ici -->
-             <img src="{% static 'img/jeunes-freelance.jpg' %}" class="img-fluid" alt="Students working together">
+            <img src="{% static 'img/jeunes-freelance.jpg' %}" class="img-fluid" alt="Students working together">
         </div>
-
+    </div>
 <section id="pourquoi">
     <div class="container">
         <div class="divider"></div>
