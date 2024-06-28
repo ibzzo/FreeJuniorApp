@@ -294,8 +294,10 @@ p {
         <div class="col-md-6 order-md-1">
             <h1 class="h3">Faites des économies tout en donnant de l'expérience aux étudiants</h1>
             <p><strong>45% des étudiants en France travaillent en parallèle de leurs études.</strong> Recruter un junior coûte en moyenne <strong>10 000 €</strong> à une entreprise. Avec FreeJunior, accédez à des talents prometteurs à des tarifs compétitifs et réduisez significativement vos coûts.</p>
-            <a href="{% url 'student_list' %}" class="btn btn-primary btn-lg btn-block mb-2">Voir les étudiants</a>
-            <a href="{% url 'submit_mission' %}" class="btn btn-danger btn-lg btn-block">Postez une mission</a>
+            <div class="btn-group mt-2" role="group">
+                <a href="{% url 'student_list' %}" class="btn btn-primary btn-lg">Voir les étudiants</a>
+                <a href="{% url 'submit_mission' %}" class="btn btn-danger btn-lg ml-2">Postez une mission</a>
+            </div>
         </div>
     </div>
 <section id="pourquoi">

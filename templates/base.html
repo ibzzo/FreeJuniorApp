@@ -40,9 +40,11 @@
             margin: 0.5rem 0;
         }
 
-.nav-item.active .nav-link {
-            border-bottom: 2px solid #007bff; /* Ajouter une bordure en bas pour souligner l'élément actif */
-        }
+ @media (min-width: 768px) {
+    .nav-item.active .nav-link {
+        border-bottom: 2px solid #007bff; /* Ajouter une bordure en bas pour souligner l'élément actif */
+    }
+}
      .separator .separator-line {
       width: 1px;
     display: inline-block;
