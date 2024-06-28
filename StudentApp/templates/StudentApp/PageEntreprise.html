@@ -284,56 +284,30 @@ p {
 .timeline-heading h3 {
     color: #063BAD; /* New color for h4 elements inside timeline */
 }
-    .timeline-heading .text-muted {
-        color: #ffdd57; /* Remplacez cette couleur par celle de votre choix */
-}
-
-    @media (max-width: 767px) {
-          .timeline::before {
-        left: 8%;
-        width: 2px;
-    }
-
-    .timeline > li {
-        margin-bottom: 30px;
-    }
-
+/* Media query pour les petits écrans */
+@media (max-width: 767px) {
     .timeline-badge {
-        display: none; /* Masquer les icônes sur les petits écrans */
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.2rem;
+        margin-left: -20px;
     }
 
     .timeline-panel-container {
         width: 100%;
-        padding: 10px;
-        float: none;
-        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .timeline-panel {
         padding: 15px;
-        box-shadow: none;
-        transition: none;
-        background: #f9f9f9;
-        border: 1px solid #ddd;
     }
 
-    .timeline-heading h4 {
-        font-size: 1.2rem;
-        color: #007bff;
+    .timeline-heading h3 {
+        font-size: 1.5rem; /* Ajustement de la taille de police pour h3 */
     }
-
-    .timeline-heading p,
-    .timeline-body p {
-        font-size: 1rem;
-    }
-
-    .heading h2 {
-        font-size: 2rem;
-        color: #007bff;
-        margin-bottom: 20px;
-    }
-
-    }
+}
  </style>
 <div class="container mt-4">
     <div class="row">
@@ -420,7 +394,7 @@ p {
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h3><a href="{% url 'student_list' %}" class="text-primary">Explorer les profils étudiants</a></h3>
-                        <p class="text-muted" style="color: #ffdd57;">
+                        <p class="text-muted">
                             <i class="far fa-clock"></i> Étape 1
                         </p>
                     </div>
@@ -434,7 +408,7 @@ p {
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h3>Prendre contact</h3>
-                        <p class="text-muted" style="color: #ffdd57;">
+                        <p class="text-muted">
                             <i class="far fa-clock"></i> Étape 2
                         </p>
                     </div>
@@ -448,7 +422,7 @@ p {
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h3>Lancer la mission</h3>
-                        <p class="text-muted" style="color: yellow;">
+                        <p class="text-muted">
                             <i class="far fa-clock"></i> Étape 3
                         </p>
                     </div>
@@ -462,7 +436,7 @@ p {
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h3>Donner de la visibilité</h3>
-                        <p class="text-muted" style="color: #ffdd57;">
+                        <p class="text-muted">
                             <i class="far fa-clock"></i> Étape 4
                         </p>
                     </div>
