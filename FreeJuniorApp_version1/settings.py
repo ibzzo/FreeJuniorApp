@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ftr+!#=(zmff91&956_x#vdhxdh@&#vc5sx*6-7rc(4h$lbdub
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['54.87.17.222']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -83,11 +83,11 @@ DATABASES = {
     'default': {
 
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'freejunior_database',
+        'NAME': 'freejuniordatabase',
 
         'USER': 'yann',
         'PASSWORD': 'Lavitesse123*',
-        'HOST': 'localhost',
+        'HOST': 'freejuniordatabase.cnu228qegvai.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -123,6 +123,16 @@ USE_I18N = True
 
 USE_TZ = True
 
+AWS_ACCESS_KEY_ID = 'AKIA4MTWNWMLQWX2RONX'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'django-freejunior'
+
+
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+
+# Configurations pour les fichiers média
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
